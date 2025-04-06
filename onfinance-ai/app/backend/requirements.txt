@@ -1,0 +1,4 @@
+# app/backend/requirements.txt
+flask==2.0.1
+psutil==5.9.0
+requests==2.27.1

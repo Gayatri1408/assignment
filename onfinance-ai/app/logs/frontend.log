@@ -1,0 +1,16 @@
+INFO:root:127.0.0.1 - "GET / HTTP/1.1" 200 -
+INFO:root:127.0.0.1 - code 404, message File not found
+INFO:root:127.0.0.1 - "GET /favicon.ico HTTP/1.1" 404 -
+INFO:root:127.0.0.1 - "GET / HTTP/1.1" 304 -
+INFO:root:127.0.0.1 - "GET / HTTP/1.1" 304 -
+INFO:root:127.0.0.1 - "GET / HTTP/1.1" 304 -
+INFO:root:127.0.0.1 - code 404, message File not found
+INFO:root:127.0.0.1 - "GET /favicon.ico HTTP/1.1" 404 -
+INFO:root:127.0.0.1 - "GET / HTTP/1.1" 304 -
+INFO:root:127.0.0.1 - "GET / HTTP/1.1" 304 -
+INFO:root:127.0.0.1 - "GET / HTTP/1.1" 304 -
+INFO:root:127.0.0.1 - code 404, message File not found
+INFO:root:127.0.0.1 - "GET /favicon.ico HTTP/1.1" 404 -
+INFO:root:127.0.0.1 - "GET / HTTP/1.1" 304 -
+INFO:root:127.0.0.1 - "GET / HTTP/1.1" 304 -
+INFO:root:127.0.0.1 - "GET / HTTP/1.1" 304 -

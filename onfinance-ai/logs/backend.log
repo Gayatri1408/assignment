@@ -1,0 +1,54 @@
+2025-04-06 01:33:57,565 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-06 01:33:57,565 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 01:33:57,565 - INFO -  * Restarting with stat
+2025-04-06 01:33:57,909 - WARNING -  * Debugger is active!
+2025-04-06 01:33:57,909 - INFO -  * Debugger PIN: 227-053-399
+2025-04-06 01:36:24,283 - INFO - Home endpoint accessed
+2025-04-06 01:36:24,284 - INFO - 127.0.0.1 - - [06/Apr/2025 01:36:24] "GET / HTTP/1.1" 200 -
+2025-04-06 01:36:24,672 - INFO - Home endpoint accessed
+2025-04-06 01:36:24,673 - INFO - 127.0.0.1 - - [06/Apr/2025 01:36:24] "GET / HTTP/1.1" 200 -
+2025-04-06 12:52:40,671 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-06 12:52:40,671 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 12:52:40,686 - INFO -  * Restarting with stat
+2025-04-06 12:52:41,235 - WARNING -  * Debugger is active!
+2025-04-06 12:52:41,251 - INFO -  * Debugger PIN: 227-053-399
+2025-04-06 12:53:03,746 - INFO - Home endpoint accessed
+2025-04-06 12:53:03,746 - INFO - 127.0.0.1 - - [06/Apr/2025 12:53:03] "GET / HTTP/1.1" 200 -
+2025-04-06 12:53:04,283 - INFO - Home endpoint accessed
+2025-04-06 12:53:04,284 - INFO - 127.0.0.1 - - [06/Apr/2025 12:53:04] "GET / HTTP/1.1" 200 -
+2025-04-06 12:53:05,817 - INFO - Home endpoint accessed
+2025-04-06 12:53:05,817 - INFO - 127.0.0.1 - - [06/Apr/2025 12:53:05] "GET / HTTP/1.1" 200 -
+2025-04-06 13:33:51,523 - INFO -  * Detected change in 'C:\\Users\\admin\\Assigmnet\\onfinance-ai\\app\\backend\\app.py', reloading
+2025-04-06 13:33:51,565 - INFO -  * Restarting with stat
+2025-04-06 14:42:12,343 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-06 14:42:12,343 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 14:42:51,115 - INFO - Home endpoint accessed
+2025-04-06 14:42:51,116 - INFO - 127.0.0.1 - - [06/Apr/2025 14:42:51] "GET / HTTP/1.1" 200 -
+2025-04-06 16:23:47,135 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-06 16:23:47,135 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 17:31:09,730 - INFO - Home endpoint accessed
+2025-04-06 17:31:09,730 - INFO - 127.0.0.1 - - [06/Apr/2025 17:31:09] "GET / HTTP/1.1" 200 -
+2025-04-06 17:33:36,090 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-06 17:33:36,090 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 17:35:48,945 - INFO - Home endpoint accessed
+2025-04-06 17:35:48,945 - INFO - 127.0.0.1 - - [06/Apr/2025 17:35:48] "GET / HTTP/1.1" 200 -
+2025-04-06 17:36:11,193 - INFO - Home endpoint accessed
+2025-04-06 17:36:11,193 - INFO - 127.0.0.1 - - [06/Apr/2025 17:36:11] "GET / HTTP/1.1" 200 -
+2025-04-06 17:38:48,457 - INFO - Home endpoint accessed
+2025-04-06 17:38:48,457 - INFO - 127.0.0.1 - - [06/Apr/2025 17:38:48] "GET / HTTP/1.1" 200 -
+2025-04-06 17:44:51,251 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-06 17:44:51,251 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 17:54:50,667 - INFO - Home endpoint accessed
+2025-04-06 17:54:50,667 - INFO - 127.0.0.1 - - [06/Apr/2025 17:54:50] "GET / HTTP/1.1" 200 -
+2025-04-06 17:54:54,367 - INFO - Home endpoint accessed
+2025-04-06 17:54:54,368 - INFO - 127.0.0.1 - - [06/Apr/2025 17:54:54] "GET / HTTP/1.1" 200 -
+2025-04-06 17:54:54,879 - INFO - Home endpoint accessed
+2025-04-06 17:54:54,879 - INFO - 127.0.0.1 - - [06/Apr/2025 17:54:54] "GET / HTTP/1.1" 200 -
+2025-04-06 17:54:55,143 - INFO - Home endpoint accessed
+2025-04-06 17:54:55,145 - INFO - 127.0.0.1 - - [06/Apr/2025 17:54:55] "GET / HTTP/1.1" 200 -

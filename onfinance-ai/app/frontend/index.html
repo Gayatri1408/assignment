@@ -1,0 +1,164 @@
+<!-- app/frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnFinance AI</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+        #api-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .api-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.2s;
+        }
+        .api-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            font-style: italic;
+            color: #666;
+        }
+        .error {
+            background-color: #ffebee;
+            color: #c62828;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OnFinance AI</h1>
+        <p>Local Development Implementation</p>
+    </header>
+    
+    <main>
+        <section class="card">
+            <h2>System Status</h2>
+            <div id="status-container">Loading status...</div>
+        </section>
+        
+        <section class="card">
+            <h2>API Data</h2>
+            <div id="api-container">
+                <div class="loading">Loading API data...</div>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        // Fetch and display system health
+        async function fetchSystemStatus() {
+            try {
+                const response = await fetch('/api/health');
+                if (!response.ok) throw new Error('Failed to fetch system status');
+                
+                const data = await response.json();
+                const statusContainer = document.getElementById('status-container');
+                
+                statusContainer.innerHTML = `
+                    <p><strong>Status:</strong> ${data.status}</p>
+                    <p><strong>Version:</strong> ${data.version}</p>
+                    <p><strong>Last Updated:</strong> ${new Date().toLocaleString()}</p>
+                `;
+            } catch (error) {
+                document.getElementById('status-container').innerHTML = `
+                    <div class="error">
+                        <p>Error fetching system status: ${error.message}</p>
+                        <p>Please ensure the backend server is running.</p>
+                    </div>
+                `;
+            }
+        }
+        
+        // Fetch and display API data
+        async function fetchApiData() {
+            try {
+                const response = await fetch('/api/data');
+                if (!response.ok) throw new Error('Failed to fetch API data');
+                
+                const data = await response.json();
+                const apiContainer = document.getElementById('api-container');
+                
+                if (data.length === 0) {
+                    apiContainer.innerHTML = '<p>No API data available.</p>';
+                    return;
+                }
+                
+                let html = '<div id="api-list">';
+                data.forEach(api => {
+                    html += `
+                        <div class="api-card">
+                            <h3>${api.name}</h3>
+                            <p>${api.description}</p>
+                            <p><strong>Category:</strong> ${api.category || 'General'}</p>
+                        </div>
+                    `;
+                });
+                html += '</div>';
+                
+                apiContainer.innerHTML = html;
+            } catch (error) {
+                document.getElementById('api-container').innerHTML = `
+                    <div class="error">
+                        <p>Error fetching API data: ${error.message}</p>
+                        <p>Please ensure the backend server and data pipeline are running.</p>
+                    </div>
+                `;
+            }
+        }
+        
+        // Initialize the page
+        function init() {
+            fetchSystemStatus();
+            fetchApiData();
+            
+            // Refresh data periodically
+            setInterval(fetchSystemStatus, 30000);  // every 30 seconds
+            setInterval(fetchApiData, 60000);       // every minute
+        }
+        
+        // Run initialization when page loads
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
